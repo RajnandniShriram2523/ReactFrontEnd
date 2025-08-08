@@ -6,7 +6,7 @@ class Home extends React.Component{
     <h1>i am Contact page</h1>
     <h1>rajnandani</h1>
         <h1>
-            good    very good
+            
         </h1>
     </>
     }
