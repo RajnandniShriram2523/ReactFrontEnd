@@ -4,6 +4,7 @@ class Home extends React.Component{
     return<>
     
     <h1>i am Contact page</h1>
+    <h1>priyanka</h1>
     </>
     }
 }

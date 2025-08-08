@@ -17,7 +17,7 @@ class App extends React.Component {
     return (
       <BrowserRouter>
      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-          <NavLink className="navbar-brand" to="/">Online Job Portal</NavLink>
+          <NavLink className="navbar-brand" to="/"><img src="C:\Users\dell\OneDrive\Pictures\book 3.webp"></img></NavLink>
           <div className="collapse navbar-collapse">
             <ul className="navbar-nav mr-auto">
               <li className="nav-item">
