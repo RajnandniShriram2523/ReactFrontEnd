@@ -1,6 +1,6 @@
 body {
 
-  background-image: url("https://img.freepik.com/premium-photo/blurred-bookshelf-many-old-books-book-shop-library_36051-151.jpg?semt=ais_hybrid&w=740");
+  background-image: url("https://wallpapers.com/images/hd/library-background-zp3y3gk7am2pnsar.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -25,7 +25,7 @@ body {
 }
 .navbar-brand img{
   width:100px;
-  height:100px;
+  height:50px;
 }
 
 .nav-link {
