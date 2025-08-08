@@ -1,0 +1,64 @@
+/* src/component/login.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #e0e5ec;
+}
+
+.neumorphic-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.neumorphic-form {
+  background: #e0e5ec;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 8px 8px 16px #c1c6cf,
+              -8px -8px 16px #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 300px;
+}
+
+.neumorphic-form input {
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background: #e0e5ec;
+  box-shadow: inset 4px 4px 8px #c1c6cf,
+              inset -4px -4px 8px #ffffff;
+  font-size: 16px;
+  outline: none;
+}
+
+.neumorphic-form button {
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background: #e0e5ec;
+  box-shadow: 4px 4px 8px #c1c6cf,
+              -4px -4px 8px #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.neumorphic-form button:hover {
+  box-shadow: inset 4px 4px 8px #c1c6cf,
+              inset -4px -4px 8px #ffffff;
+}
+.logincontainer{
+    background-image: url("../public/Image/book1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  width: 100vw;
+  overflow: auto hidden;
+}

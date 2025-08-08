@@ -1,0 +1,55 @@
+body {
+
+  background-image: url("../public/Image/book2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  width: 100vw;
+  overflow: auto hidden;
+
+  
+}
+
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-weight: bold;
+ 
+}
+
+.nav-link {
+  margin-right: 10px;
+  color: white;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color:blue;
+}
+
+
+.login_btn {
+ 
+ 
+  width: 150px; /* You can adjust this value */
+  display: inline-block; /* Needed for width to apply on <a> */
+  text-align: center;
+  padding: 10px;
+  margin-right: 20px;
+  font-size: 16px;
+  color: white;
+  background-color: blue;
+  font-weight: 800;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+
+
+.login_btn:hover {
+  background-color:rgb(24, 184, 24);
+  color: white;
+}
