@@ -54,7 +54,7 @@ body {
               inset -4px -4px 8px #ffffff;
 }
 .logincontainer{
-    background-image: url("../public/Image/book1.jpg");
+    /* background-image: url("../public/Image/book1.jpg"); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;

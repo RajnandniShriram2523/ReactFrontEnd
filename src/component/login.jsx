@@ -11,6 +11,7 @@ function Login() {
         <input type="password" placeholder="Password" />
         <button type="submit">Login</button>
       </form>
+      
     </div>
     </div>
   );

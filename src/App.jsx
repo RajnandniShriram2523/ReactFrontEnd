@@ -5,10 +5,8 @@ import Home from "./home";
 import About from "./about";
 import Contact from "./contact"
 import Login from './component/login'
+
 import './App.css';
-
-
-
 
 
 
@@ -16,8 +14,8 @@ class App extends React.Component {
   render() {
     return (
       <BrowserRouter>
-     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-          <NavLink className="navbar-brand" to="/"><img src="C:\Users\dell\OneDrive\Pictures\book 3.webp"></img></NavLink>
+     <nav className="navbar navbar-expand-lg">
+          <NavLink className="navbar-brand" to="/"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200_webp/c46c7f62556223.5a945f059c90e.png"/></NavLink>
           <div className="collapse navbar-collapse">
             <ul className="navbar-nav mr-auto">
               <li className="nav-item">
@@ -33,7 +31,7 @@ class App extends React.Component {
                 <NavLink className="nav-link" to="/contact">Contact Us</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to=" ">Service</NavLink>
+                <NavLink className="nav-link" to="services"></NavLink>
               </li>
             </ul>
           </div>
@@ -46,8 +44,8 @@ class App extends React.Component {
   <Route path="/home" element={<Home />} />
   <Route path="/about" element={<About />} />
   <Route path="/contact" element={<Contact />} />
-  {/* <Route path="/about" element={<About />} /> */}
-<Route path="/login" element={<Login />} />
+  <Route path="/login" element={<Login />} />
+  
 
 </Routes>
       </BrowserRouter>
