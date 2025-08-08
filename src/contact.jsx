@@ -5,8 +5,8 @@ class Home extends React.Component{
     
     <h1>i am Contact page</h1>
     <h1>rajnandani</h1>
-        <h1>priyanka
-            
+        <h1>
+            good    
         </h1>
     </>
     }
