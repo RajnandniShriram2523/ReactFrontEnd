@@ -4,7 +4,7 @@ class Admindashboard extends React.Component{
     return<>
     
     <h1>i am admindashboard</h1>
-    <h1>rajnandani</h1>
+    <h1>rajnandani patil</h1>
    </>
     }
 }
