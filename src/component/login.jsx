@@ -1,5 +1,6 @@
 // src/component/Login.js
 import React from 'react';
+import {Link} from "react-router-dom";
 import './login.css';
 
 function Login() {
@@ -9,7 +10,8 @@ function Login() {
       <form className="neumorphic-form">
         <input type="text" placeholder="Username" />
         <input type="password" placeholder="Password" />
-        <button type="submit">Login</button>
+        {/* <button><a href="/admindashboard">Login</a></button> */}
+        <Link to="/admindashboard" className="btn btn-primary">Login</Link>
       </form>
       
     </div>
