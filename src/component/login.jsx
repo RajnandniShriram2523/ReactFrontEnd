@@ -1,10 +1,11 @@
 // src/components/Login.js
 import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
+import {Link} from "react-router-dom";
 import './login.css';
 
 function Login() {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -12,12 +13,6 @@ function Login() {
   const handleLogin = (e) => {
     e.preventDefault();
 
-    // Simple mock check (you can replace with real API)
-    if (username && password) {
-      navigate("/admindashboard");
-    } else {
-      alert("Please enter both username and password.");
-    }
   };
 
   return (
@@ -57,7 +52,9 @@ function Login() {
             />
           </div>
 
-          <button type="submit" className="btn login-btn">Login </button>
+          {/* <button type="submit" className="btn login-btn">Login</button> */}
+          <Link to="/admindashboard">Login</Link>;
+          
         </form>
       </div>
     </div>
