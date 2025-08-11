@@ -16,7 +16,7 @@ export default class Addcategory extends React.Component{
 
         return <>
         
-        <div class="main">
+        <div class="main2">
             <AdminSidebar />
              
        
