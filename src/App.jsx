@@ -16,7 +16,7 @@ class App extends React.Component {
   render() {
     return (
       <BrowserRouter>
-     <nav className="navbar navbar-expand-lg  bg-dark">
+     <nav className="navbar navbar-expand-lg  ">
           <NavLink className="navbar-brand" to="/"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200_webp/c46c7f62556223.5a945f059c90e.png"/></NavLink>
           <div className="collapse navbar-collapse">
             <ul className="navbar-nav mr-auto">

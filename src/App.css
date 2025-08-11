@@ -1,19 +1,22 @@
 body {
 
-  background-image: url("https://wallpapers.com/images/hd/library-background-zp3y3gk7am2pnsar.jpg");
+  /* background-image: url("https://wallpapers.com/images/hd/library-background-zp3y3gk7am2pnsar.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   background-position: center center;
   height: 100vh;
   width: 100vw;
   overflow: auto hidden;
-
+  
   
 }
 
 .navbar {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgb(26, 10, 63);
   
+}
+.navbar-expand-lg{
+  background-color: rgb(26, 10, 63);
 }
 
 .navbar-brand {

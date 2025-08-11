@@ -15,14 +15,17 @@ export default class Addcategory extends React.Component{
     render(){
 
         return <>
+        
         <div class="main">
             <AdminSidebar />
              
        
-        <div class="addc">
+        
+            <div class="form">
             <input type='text' name='name' value='' placeholder="Enter Category" />
             <br></br><br></br>
             <a href="" className="btn">Add Category</a>
+            
             
         </div>
                  </div>
