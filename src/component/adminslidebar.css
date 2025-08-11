@@ -4,6 +4,7 @@
   height: 100vh;
   background-color:pink;
   box-sizing: border-box;
+  position: fixed;
 }
 
 .sidebar h2 {

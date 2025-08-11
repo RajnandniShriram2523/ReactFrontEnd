@@ -50,17 +50,7 @@ class AdminSidebar extends Component {
               </ul>
             )}
 
-            {/* Student Menu */}
-            <li onClick={this.toggleStudent} className="has-submenu">
-              <span className="arrow">{isStudentOpen ? '▼' : '▶'}</span>
-              <Link to="#">Student</Link>
-            </li>
-            {isStudentOpen && (
-              <ul className="submenu">
-                <li><Link to="/addstudent">Add Student</Link></li>
-                <li><Link to="/viewstudent">View Student</Link></li>
-              </ul>
-            )}
+           
 
             {/* Book Menu */}
             <li onClick={this.toggleBook} className="has-submenu">
@@ -71,6 +61,18 @@ class AdminSidebar extends Component {
               <ul className="submenu">
                 <li><Link to="/addbook">Add Book</Link></li>
                 <li><Link to="/viewbook">View Book</Link></li>
+              </ul>
+            )}
+
+             {/* Student Menu */}
+            <li onClick={this.toggleStudent} className="has-submenu">
+              <span className="arrow">{isStudentOpen ? '▼' : '▶'}</span>
+              <Link to="#">Student</Link>
+            </li>
+            {isStudentOpen && (
+              <ul className="submenu">
+                <li><Link to="/addstudent">Add Student</Link></li>
+                <li><Link to="/viewstudent">View Student</Link></li>
               </ul>
             )}
 
