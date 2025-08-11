@@ -19,7 +19,7 @@
   font-weight: bold;
 }
 
-.login-btn {
+.btn-primary {
   background-color: white;
   /* border: 2px solid black; */
   padding: 10px 40px;
@@ -30,6 +30,22 @@
   color:white;
 }
 
-.login-btn:hover {
+.btn-primary:hover {
   background-color: #225ad3;
+}
+.btn-login {
+  background-color: white;
+  border: 2px solid black;
+  padding: 10px 40px;
+  font-weight: bold;
+  width:200px;
+  height:50px;
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: rgb(119, 37, 139);
+  color:white;
+}
+
+.btn-login:hover {
+   border: 2px solid white;
 }

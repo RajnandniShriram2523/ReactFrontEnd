@@ -52,9 +52,8 @@ function Login() {
             />
           </div>
 
-          {/* <button type="submit" className="btn login-btn">Login</button> */}
-          <Link to="/admindashboard">Login</Link>;
-          
+         <Link to="/adminsildebar" className=" btn-login">Login</Link>
+                  
         </form>
       </div>
     </div>

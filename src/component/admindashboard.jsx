@@ -6,6 +6,10 @@ class Admindashboard extends React.Component{
     <h1>i am admindashboard</h1>
     <h1>rajnandani patil</h1>
    </>
+    
+
+
+
     }
 }
 export default Admindashboard;
