@@ -1,6 +1,7 @@
 import React from "react";
 import './addstudent.css';
 import AdminSidebar from "./adminslidebar";
+import Addstudent from "../service/Datasevice";
 
 export default class AddStudent extends React.Component {
     constructor() {
@@ -12,6 +13,23 @@ export default class AddStudent extends React.Component {
             study_year: "",
             errors: {} // For holding error messages
         };
+    }
+    sendstudentToServer = () => {
+        let promise =Addstudent.savestudent(this.state);
+        promise
+            .then((result) => {
+                this.setState({
+                    msg: result.data.status,
+                    student_name: "",
+                    student_email: "",
+                    student_password: "",
+                    study_year: "",
+
+                });
+            })
+            .catch((err) => {
+                this.setState({ msg: err.msg });
+            });
     }
 
     validateForm = () => {
@@ -94,7 +112,7 @@ export default class AddStudent extends React.Component {
                     {errors.student_email && <div className="error">{errors.student_email}</div>}
 
                     <input
-                        type="text"
+                        type="password"
                         name="student_password"
                         placeholder="Enter Student Password"
                         value={student_password}
@@ -112,7 +130,7 @@ export default class AddStudent extends React.Component {
                     {errors.study_year && <div className="error">{errors.study_year}</div>}
 
                     <div className="buttons">
-                        <button className="btn" onClick={this.handleAddStudent}>Add Student</button>
+                        <button className="btn" onClick={this.sendstudentToServer}>Add Student</button>
                         <button className="btn" onClick={this.handleClear}>Clear</button>
                     </div>
                 </div>

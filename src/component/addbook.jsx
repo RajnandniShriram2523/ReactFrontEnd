@@ -1,6 +1,7 @@
 import React from "react";
 import AdminSidebar from "./adminslidebar";
 import "./addbook.css";
+import AddBook from "../service/Datasevice" 
 
 export default class Addbook extends React.Component {
     constructor() {
@@ -16,7 +17,26 @@ export default class Addbook extends React.Component {
             msg: ""
         };
     }
+    sendBookToServer = () => {
+        let promise = AddBook.savebook(this.state);
+        promise
+            .then((result) => {
+                this.setState({
+                    msg: result.data.status,
+                    book_title: "",
+                    book_author: "",
+                    book_price: "",
+                    book_published_date: "",
+                    isbn_code: "",
+                    category_id: "",
+                    status: "",
 
+                });
+            })
+            .catch((err) => {
+                this.setState({ msg: err.msg });
+            });
+    }
     handleInputChange = (e) => {
         this.setState({ [e.target.name]: e.target.value });
     };
@@ -128,7 +148,7 @@ export default class Addbook extends React.Component {
                     /><br />
 
                     <div className="buttons">
-                        <button className="btn" type="button" onClick={this.handleSubmit}>
+                        <button className="btn" type="button" onClick={this.sendBookToServer}>
                             Add Book
                         </button>
                         <button className="btn" type="button" onClick={this.handleClear}>

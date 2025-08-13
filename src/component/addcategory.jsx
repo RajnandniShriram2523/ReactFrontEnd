@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./addcategory.css";
 import AdminSidebar from "./adminslidebar.jsx";
-import Contactservice from "../service/Datasevice.js"; 
+import AddCategory from "../service/Datasevice.js"; 
 
 
 
@@ -15,8 +15,8 @@ export default class Addcategory extends React.Component {
             msg: ""
         };
     }
-    sendContactToServer = () => {
-        let promise = Contactservice.saveContact(this.state);
+    sendCategoryToServer = () => {
+        let promise = AddCategory.saveCategory(this.state);
         promise
             .then((result) => {
                 this.setState({ 
@@ -71,7 +71,7 @@ export default class Addcategory extends React.Component {
                         />
                         <br /><br />
 
-                        <button className="btn" onClick={this.sendContactToServer}>Add Category</button>
+                        <button className="btn" onClick={this.sendCategoryToServer}>Add Category</button>
                         {this.state.msg && (
                             <p style={{ color: "yellow", marginTop: "10px" }}>
                                 {this.state.msg}

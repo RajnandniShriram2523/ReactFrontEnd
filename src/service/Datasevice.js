@@ -1,14 +1,22 @@
 import axios from "axios";
 
-class Contactservice {
-    saveContact(contData){
-        let promise=axios.post("http://localhost:4000/addcategory",contData);
+class AddData {
+    saveCategory(addcategory){
+        let promise=axios.post("http://localhost:4000/addcategory",addcategory);
         return promise;
     }
-    saveContact(contData){
-        let promise=axios.post("http://localhost:4000/addcategory",contData);
+    savebook(addbook){
+        let promise=axios.post("http://localhost:4000/addbook",addbook);
+        return promise;
+    }
+    savestudent(addstudent){
+        let promise=axios.post("http://localhost:4000/adduser",addstudent);
         return promise;
     }
     
 }
-export default new Contactservice();
+export default new AddData();
+
+
+
+
