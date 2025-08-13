@@ -24,28 +24,29 @@
   /* border: 2px solid black; */
   padding: 10px 40px;
   font-weight: bold;
-  width:200px;
-  height:50px;
-  background-color: rgb(119, 37, 139);
-  color:white;
+  width: 200px;
+  height: 50px;
+  background-color: rgb(6, 15, 97);
+  color: white;
 }
 
 .btn-primary:hover {
   background-color: #225ad3;
 }
+
 .btn-login {
   background-color: white;
   border: 2px solid black;
   padding: 10px 40px;
   font-weight: bold;
-  width:200px;
-  height:50px;
+  width: 200px;
+  height: 50px;
   text-decoration: none;
   border-radius: 10px;
   background-color: rgb(119, 37, 139);
-  color:white;
+  color: white;
 }
 
 .btn-login:hover {
-   border: 2px solid white;
+  border: 2px solid white;
 }

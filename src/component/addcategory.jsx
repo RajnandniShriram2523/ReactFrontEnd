@@ -1,35 +1,70 @@
 import React from "react";
-import ReactDom from 'react-dom';
-import  './addcategory.css'
-import AdminSidebar from "./adminslidebar";
-export default class Addcategory extends React.Component{
-    
+import ReactDOM from "react-dom";
+import "./addcategory.css";
+import AdminSidebar from "./adminslidebar.jsx";
 
-   constructor(){
-    super();
-    this.state={
-        category_name:""
+
+
+export default class Addcategory extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            category_name: "",
+            msg: ""
+        };
     }
-}
 
-    render(){
+    handleAddCategory = () => {
+        const { category_name } = this.state;
 
-        return <>
-        
-        <div class="main2">
-            <AdminSidebar />
-             
-       
-        
-            <div class="form">
-            <input type='text' name='name' value='' placeholder="Enter Category" />
-            <br></br><br></br>
-            <a href="" className="btn">Add Category</a>
-            
-            
-        </div>
-                 </div>
-       
-        </>
+        if (category_name.trim() === "") {
+            //   alert("Please enter a category.");
+            this.setState({
+                msg: "Please Enter A Category!"
+            })
+            return;
+        }
+        // Here you can make an API call or handle logic
+        console.log("Category added:", category_name);
+
+        // Show success message and clear the field
+        this.setState({
+            msg: "Category added successfully!",
+            category_name: ""
+        });
+
+        // alert("Category added!");
+    };
+
+    render() {
+        return (
+            <>
+                <div className="main2">
+                    <AdminSidebar />
+                    <div className="form1">
+                   
+                        {/* <div className="form"> */}
+                        <input
+                            type="text"
+                            name="name"
+                            value={this.state.category_name}
+                            placeholder="Enter Category"
+                            onChange={(e) =>
+                                this.setState({ category_name: e.target.value })
+                            }
+                        />
+                        <br /><br />
+
+                        <button className="btn" onClick={this.handleAddCategory}>Add Category</button>
+                        {this.state.msg && (
+                            <p style={{ color: "yellow", marginTop: "10px" }}>
+                                {this.state.msg}
+                            </p>
+                        )}
+                    
+                </div>
+                </div>
+            </>
+        );
     }
 }
