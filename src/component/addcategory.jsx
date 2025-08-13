@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./addcategory.css";
 import AdminSidebar from "./adminslidebar.jsx";
+import Contactservice from "../service/Datasevice.js"; 
 
 
 
@@ -9,32 +10,47 @@ export default class Addcategory extends React.Component {
     constructor() {
         super();
         this.state = {
+            id:0,
             category_name: "",
             msg: ""
         };
     }
-
-    handleAddCategory = () => {
-        const { category_name } = this.state;
-
-        if (category_name.trim() === "") {
-            //   alert("Please enter a category.");
-            this.setState({
-                msg: "Please Enter A Category!"
+    sendContactToServer = () => {
+        let promise = Contactservice.saveContact(this.state);
+        promise
+            .then((result) => {
+                this.setState({ 
+                    msg: result.data.status,
+                    category_name: "",
+                   
+                });
             })
-            return;
-        }
-        // Here you can make an API call or handle logic
-        console.log("Category added:", category_name);
+            .catch((err) => {
+                this.setState({ msg: err.msg });
+            });
+    }
 
-        // Show success message and clear the field
-        this.setState({
-            msg: "Category added successfully!",
-            category_name: ""
-        });
+    // handleAddCategory = () => {
+    //     const { category_name } = this.state;
 
-        // alert("Category added!");
-    };
+    //     if (category_name.trim() === "") {
+    //         //   alert("Please enter a category.");
+    //         this.setState({
+    //             msg: "Please Enter A Category!"
+    //         })
+    //         return;
+    //     }
+    //     // Here you can make an API call or handle logic
+    //     console.log("Category added:", category_name);
+
+    //     // Show success message and clear the field
+    //     this.setState({
+    //         msg: "Category added successfully!",
+    //         category_name: ""
+    //     });
+
+    //     // alert("Category added!");
+    // };
 
     render() {
         return (
@@ -55,7 +71,7 @@ export default class Addcategory extends React.Component {
                         />
                         <br /><br />
 
-                        <button className="btn" onClick={this.handleAddCategory}>Add Category</button>
+                        <button className="btn" onClick={this.sendContactToServer}>Add Category</button>
                         {this.state.msg && (
                             <p style={{ color: "yellow", marginTop: "10px" }}>
                                 {this.state.msg}
