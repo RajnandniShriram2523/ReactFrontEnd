@@ -75,7 +75,7 @@
   display: inline-block;
   font-family: monospace;
   font-size: 2rem;
-  color: black;
+  color:black;
   white-space: pre-wrap;        /* Keep line breaks */
   overflow: hidden;
   border-right: 2px solid black;

@@ -10,7 +10,7 @@ export default class SlidelingImg extends React.Component {
                <div className="headling">
   <h1 className="typewriter">
     Welcome to Library priyanka rajnandni
-    jhgf hjgsdf hjdfgjh
+    jhgf hjgsdf hjdfgjh hjgruy3 hevryuiwr
   </h1>
 </div>
 

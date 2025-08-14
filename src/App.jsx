@@ -12,7 +12,7 @@ import AddCategory from './component/addcategory';
 import Addbook from "./component/addbook";
 import AddStudent from "./component/addstudent";
 
-class App extends React.Component {
+class App extends React.Component{
   render() {
     return (
       <BrowserRouter>

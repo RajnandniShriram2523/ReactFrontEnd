@@ -45,9 +45,7 @@ body {
 }
 
 
-.btn-primary { 
- 
- 
+.btn-primary {  
    width: 150px; /*You can adjust this value */
    display: inline-block;/* Needed for width to apply on <a> */
    text-align: center;
