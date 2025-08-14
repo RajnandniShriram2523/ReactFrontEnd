@@ -10,6 +10,8 @@ import AdminSidebar from './component/adminslidebar';
 import AddCategory from './component/addcategory';
 import Addbook from "./component/addbook";
 import AddStudent from "./component/addstudent";
+import ViewCategory from './component/ViewCategory';
+import ViewBook from './component/ViewBook';
 
 class App extends React.Component {
   render() {
@@ -17,12 +19,15 @@ class App extends React.Component {
       <BrowserRouter>
         <nav className="navbar navbar-expand-lg  ">
           <NavLink className="navbar-brand" to="/"><img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200_webp/c46c7f62556223.5a945f059c90e.png" /></NavLink>
+        
+
+
           <div className="collapse navbar-collapse">
             <ul className="navbar-nav mr-auto">
               <li className="nav-item">
                 <NavLink className="nav-link" to="/"></NavLink>
               </li>
-              {/* <li className="nav-item">
+              <li className="nav-item">
                 <NavLink className="nav-link" to="/home">Home</NavLink>
               </li>
               <li className="nav-item">
@@ -33,7 +38,7 @@ class App extends React.Component {
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link" to="services"></NavLink>
-              </li> */}
+              </li>
             </ul>
           </div>
           <div>
@@ -42,6 +47,11 @@ class App extends React.Component {
           </div>
         </nav>
 
+          
+        
+       
+        
+
         <Routes>
           {/* <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -49,7 +59,9 @@ class App extends React.Component {
           <Route path="/login" element={<Login />} />
           <Route path="/adminsildebar" element={<AdminSidebar />} />
           <Route path="/addcategory" element={<AddCategory />} />
+           <Route path="/viewcategory" element={<ViewCategory />}/>
           <Route path="/addbook" element={<Addbook />} />
+           <Route path="/viewBook" element={<ViewBook />}/>
           <Route path="/addstudent" element={<AddStudent />} />
         </Routes>
       </BrowserRouter>

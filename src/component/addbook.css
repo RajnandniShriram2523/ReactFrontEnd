@@ -1,24 +1,22 @@
 .main3{
     width:100vw;
-    min-height:100vh;
+    height:100vh;
      /* background-color: rgb(215, 215, 212);  */
      background-image: url("https://img.freepik.com/free-vector/gradient-abstract-wireframe-background_23-2149009903.jpg?semt=ais_hybrid&w=740");
   background-size: cover;
   background-repeat: no-repeat; 
     display:flex;
-     align-items: center; 
-    
     gap:20%;
-    /* justify-content: center;  */
+   
 
 }
 
 
 .form2{
     width:45%;
-    height:40%;
-    /* margin-top:10%; */
-    /* background-color: rgb(10, 238, 60); */
+    height:80%;
+    margin-top:50px;
+    background-color:white;
       display:flex;  
      text-align: center;
     align-items: center;
@@ -28,9 +26,9 @@
 
 }
 
-input{
+input[type='text']{
     width:90%;
-    height:50px;
+    height:40px;
     border-radius: 10px;
     text-decoration: none;
 } 
@@ -42,18 +40,29 @@ input{
    color:black;
     display:flex;  
     justify-content: space-between;
+    color:red;
 }
-.btn
+.bttn
 {
    width:40%;
    height:40px;
- background-color: rgba(14, 24, 27, 1);
+ background-color: rgb(23, 115, 143);
    color:black
+   
+   
+}
+.btnn
+{
+   width:40%;
+   height:40px;
+ background-color:red;
+   color:black
+   
 }
 .btn:hover{
     border: 2px solid white;
    color: white;
-       background-color: blue;
+       background-color: rgb(255, 0, 153);
 }
 .message {
     margin-top: 25px;

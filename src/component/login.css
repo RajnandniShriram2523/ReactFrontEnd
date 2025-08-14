@@ -2,6 +2,8 @@
   max-width: 400px;
   margin: 50px auto;
   text-align: center;
+  position: relative;
+  z-index: 3;
 }
 
 .logo img {

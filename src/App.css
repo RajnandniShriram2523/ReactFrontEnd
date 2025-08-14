@@ -1,20 +1,57 @@
 body {
 
-  /* background-image: url("https://wallpapers.com/images/hd/library-background-zp3y3gk7am2pnsar.jpg");
-  background-size: cover;
-  background-repeat: no-repeat; */
+   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm-VC2m0fZ_3yhjJhD0k4fT3f5tlerCS4nNA&s");
+  background-size:100% 100%;
+  background-repeat: no-repeat; 
   /* background-position: center center; */
   height: 100vh;
   width: 100vw;
-  overflow: hidden auto;
+  overflow: hidden;
   
   
 }
 
+
+
+
 .navbar {
-  box-shadow: 0 2px 4px rgb(26, 10, 63);
+   background-color: rgb(54, 53, 53);             
+  color:white;                         
+  padding: 15px 30px;                    
+  border-radius: 10px;                    
   
+  display: flex;                          
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 16px;
+  height:70px;
+  border: 2px solid orange;
+  border-radius: 10px;
+
+
+ 
 }
+
+.navbar:hover {
+  box-shadow: 0 6px 12px rgba(43, 7, 151, 0.3);
+  transform: translateY(-2px);
+}
+
+
+.navbar a {
+  text-decoration: none;
+  color:white;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+.navbar a:hover {
+  color: white; 
+
+}
+
 .navbar-expand-lg{
   background-color: rgb(26, 10, 63);
 }
@@ -46,8 +83,8 @@ body {
 .btn-primary { 
  
  
-   width: 150px; /*You can adjust this value */
-   display: inline-block;/* Needed for width to apply on <a> */
+   width: 150px; 
+   display: inline-block;
    text-align: center;
   padding: 10px;
   margin-right: 20px;

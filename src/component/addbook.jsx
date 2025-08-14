@@ -89,7 +89,7 @@ export default class Addbook extends React.Component {
                 <AdminSidebar />
                 <div className="form2">
                     <br />
-                    <h2 style={{ color: "yellow" }}>ADD BOOK</h2>
+                    
 
                     <input
                         type="text"
@@ -148,10 +148,10 @@ export default class Addbook extends React.Component {
                     /><br />
 
                     <div className="buttons">
-                        <button className="btn" type="button" onClick={this.sendBookToServer}>
+                        <button className="bttn" type="button" onClick={this.sendBookToServer}>
                             Add Book
                         </button>
-                        <button className="btn" type="button" onClick={this.handleClear}>
+                        <button className="btnn" type="button" onClick={this.handleClear}>
                             Clear
                         </button>
                     </div>
