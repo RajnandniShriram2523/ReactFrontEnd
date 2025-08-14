@@ -48,6 +48,7 @@ class AdminSidebar extends Component {
               <ul className="submenu">
                 <li><Link to="/addcategory">Add Category</Link></li>
                 <li><Link to="/viewcategory">View Category</Link></li>
+                 
               </ul>
             )}
 
@@ -62,6 +63,7 @@ class AdminSidebar extends Component {
               <ul className="submenu">
                 <li><Link to="/addbook">Add Book</Link></li>
                 <li><Link to="/viewbook">View Book</Link></li>
+                 
               </ul>
             )}
 
@@ -74,12 +76,15 @@ class AdminSidebar extends Component {
               <ul className="submenu">
                 <li><Link to="/addstudent">Add Student</Link></li>
                 <li><Link to="/viewstudent">View Student</Link></li>
+                 
               </ul>
             )}
 
             {/* Other static links */}
-            {/* <li><Link to="/orders">Orders</Link></li>
-            <li><Link to="/settings">Settings</Link></li> */}
+         
+            <li><Link to="/settings">About Us</Link></li>
+            <li><Link to="/settings">Contact Us</Link></li>
+            <li><Link to="/settings">Log Out</Link></li>
           </ul>
         </aside>
       </div>
