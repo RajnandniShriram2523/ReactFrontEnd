@@ -4,15 +4,17 @@ body {
   background-size: cover;
   background-repeat: no-repeat; */
   /* background-position: center center; */
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   overflow: hidden auto;
-  
+  background-color:yellow;
   
 }
 
+
 .navbar {
   box-shadow: 0 2px 4px rgb(26, 10, 63);
+  width:100%;
   
 }
 .navbar-expand-lg{
@@ -50,7 +52,7 @@ body {
    display: inline-block;/* Needed for width to apply on <a> */
    text-align: center;
   padding: 10px;
-  margin-right: 20px;
+  margin-right: 50px;
   font-size: 16px;
   color: white;
   background-color: blue;
