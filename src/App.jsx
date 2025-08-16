@@ -9,6 +9,7 @@ import Contact from "./contact";
 import Login from './component/login';
 import AdminSidebar from './component/adminslidebar';
 import AddCategory from './component/addcategory';
+// import viewcat from './component/ViewCategory';
 import Addbook from "./component/addbook";
 import AddStudent from "./component/addstudent";
 
@@ -24,7 +25,7 @@ class App extends React.Component{
               <li className="nav-item">
                 <NavLink className="nav-link" to="/"></NavLink>
               </li> 
-              {/* <li className="nav-item">
+              <li className="nav-item">
                 <NavLink className="nav-link" to="/home">Home</NavLink>
               </li>
               <li className="nav-item">
@@ -35,7 +36,7 @@ class App extends React.Component{
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link" to="services"></NavLink>
-              </li> */}
+              </li>
            </ul>
           </div>
           <div>
@@ -52,6 +53,7 @@ class App extends React.Component{
           <Route path="/login" element={<Login />} />
           <Route path="/adminsildebar" element={<AdminSidebar />} />
           <Route path="/addcategory" element={<AddCategory />} />
+           {/* <Route path="/viewcategory" element={<viewcat />} /> */}
           <Route path="/addbook" element={<Addbook />} />
           <Route path="/addstudent" element={<AddStudent />} />
         </Routes>
@@ -63,4 +65,4 @@ class App extends React.Component{
 
 
 
-export default App;
+export default App;

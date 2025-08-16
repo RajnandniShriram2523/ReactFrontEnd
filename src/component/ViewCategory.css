@@ -1,4 +1,4 @@
-.container {
+/* .container {
   padding: 20px;
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
@@ -8,7 +8,7 @@
     display: flex;
     width:100vw;
     height:100vh;
-    /* box-sizing: border-box; */
+     box-sizing: border-box; 
     overflow: hidden auto;
 }
 
@@ -33,10 +33,10 @@ th, td {
 th {
   background-color: #3498db;
   color: white;
-}
+} */
 
 /* Link styling */
-a {
+/* a {
   text-decoration: none;
   padding: 6px 12px;
   border-radius: 4px;
@@ -54,4 +54,4 @@ a {
 
 a:hover {
   opacity: 0.8;
-}
+} */

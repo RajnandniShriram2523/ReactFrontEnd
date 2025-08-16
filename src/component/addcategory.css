@@ -3,8 +3,8 @@
     height:100vh;
     /* background-color: rgb(215, 215, 212); */
      background-image: url("https://img.freepik.com/free-vector/gradient-abstract-wireframe-background_23-2149009903.jpg?semt=ais_hybrid&w=740");
-  background-size: cover;
-  background-repeat: no-repeat; 
+    background-size: cover;
+    background-repeat: no-repeat; 
     display:flex;
     /* align-items: center; */
     position:fixed;
@@ -44,5 +44,5 @@ input{
 .btn:hover{
     border: 2px solid white;
    color: white;
-       background-color: blue;
+   background-color: blue;
 }
